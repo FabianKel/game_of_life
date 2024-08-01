@@ -1,13 +1,14 @@
-### El algoritmo de conway:
+### Conway's Game of Life
 
-- Una célula tiene 8 vecinos. Para nosotros, una célula es un pixel, los vecinos son los 8 píxeles alrededor. 
-- La célula puede estar viva (pintada de blanco, digamos) o muerta (pintada de negro). Pueden usar otros colores, pero esta es la idea.
-- Cada "turno" va a ser un frame para nosotros. Pueden hacer un delay entre cada frame para poder mejor visualizar su animación.
-- La resolución queda a su discreción, pero les recomiendo trabajar en una resolución muy baja, de como 100x100, y cuando terminen hacer algunas pruebas a resoluciones altas. 
+## Output preview
 
-## Las reglas son, para cada turno:
+![Output preview](https://github.com/FabianKel/game_of_life/blob/master/gameoflifeGIF.gif)
 
-- Cualquier célula viva que tenga menos de dos vecinos vivos, muere. (underpopulation)
-- Una célula viva que tenga dos o tres vecinos vivos, sobrevive. (survival)
-- Cualquier célula viva que tenga más de tres vecinos vivos, muere. (overpopulation)
-- Cualquier célula muerta que tenga exactamente tres vecinos vivos, vive. (reproduction)
+To run the code make sure to have Rust installed on yout computer, then just write the following commands on the terminal:
+
+```bash
+cargo build
+```
+```bash
+cargo run
+```
